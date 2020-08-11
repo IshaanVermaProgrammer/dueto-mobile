@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dueto</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>$("document").ready(
+function(){
+$("#p").dropdown();
+}
+)</script>
+<script>
+function search(){
+const a=document.getElementById("id").value;
+const i="https://www.google.com/search?q=";
+const t="&rlz=1C1CHBF_enIN857IN857&oq=hello&aqs=chrome.2.69i57j46j0j46j0j69i61j69i60j69i61.3304j0j7";
+const b="&sourceid=chrome&ie=UTF-8";
+document.getElementById("id").value="";
+document.getElementById("a").href=i+a+t+b;
+}
+</script>
+<style>
+body{background:purple;background-size:cover;}
+span{color:magenta;}
+body{color:white;font-weight:bold;font-family:cursive;}
+.wrap{
+display:grid;
+grid-template-columns:80% 20%;
+}
+.anime{animation-name:a;animation-duration:1s;position:relative;}
+@keyframes a{
+0%{left:100000px;}
+100%{left:0px;}
+}
+h2{position:relative;top:12px;}
+ul{list-style:none;}
+a{text-decoration:none;color:white;}
+img{width:50%;margin:auto;display:block;}
+#s{background:dodgerblue;color:white;font-family:cursive;font-weight:bold;}
+input{height:30px;width:80%;}
+#scroll{position:relative;left:500px;background:grey;height:20%;width:12%;padding:7px;
+background-color:white;
+display:none;
+}
+#scroll a{color:black;}
+.opt img{
+width:40%;
+margin:auto;
+}
+.opt{
+height:30%;
+width:42%;
+margin:auto;
+}
+.drop{
+width:25%;
+border:1px solid purple;
+background-color:purple;
+font:bold 23px cursive;
+color:white;
+}
+#cy{
+height:30%;
+width:50%;
+margin:auto;
+}
+#img{
+width:40%;
+margin:auto;
+}
+</style>
+</head>
+<body>
+<div class="anime">
+<div class="wrap"><div><h1><span>D</span>ueto</h1></div>
+<h2>
+<a href="menu.html">Menu</a>         
+</h2>
+</div><br><center><input type="text" id="id" placeholder="Search a question"> 
+<a href="" id="a"><button id="s" onclick="search()">Search</button></a></center><br>
+<center><h1>Collab with other people on</h1><br><br>
+<a href="https://www.reddit.com/"><img src="reddit.jfif"></a><br><a href="https://github.com/"><img src="gh.jfif"></a> <br><a href="https://www.facebook.com/"><img src="fb.png"></a><br>
+<a href="https://quora.com/"><img src="quora.png"></a>
+<br><br>
+<h1>Educational resources</h1>
+<a href="https://ocw.mit.edu/"><button class="opt"><img src="ocw.jpg"><h1>MIT Open Course Ware(Web)</h1>
+<h2>MIT Open Course Ware is a web-based publication of virtually all MIT course content. OCW is open and free and is a permanent MIT activity.</h2>
+</button></a><br><br>
+<a href="https://www.youtube.com/user/MIT"><button class="opt"><img src="ocw.jpg"><h1>MIT Open Course Ware(youtube)</h1>
+<h2>MIT Open Course Ware allows you to view video lectures of  MIT courses for free</h2>
+</button></a><br><br>
+<a href="http://online.caltech.edu/courses"><button class="opt"><img src="ct.png"><h1>Caltech(Web)</h1>
+<h2>Caltech online courses aim to improve how we educate future generations of scientists and engineers.the resources are 100% free</h2>
+</button></a><br><br>
+<a href="https://www.youtube.com/user/caltech"><button class="opt" id="cy"><img src="ct.png"><h1>Caltech(Youtube)</h1>
+<h2>Caltech's youtube channel allows you you to view video lectures of  Caltech courses for free.
+You can also watch about the research at Caltech,Seminars,and many more stuff which takes place in Caltech.
+</h2>
+</button></a><br><br>
+<a href="https://online-learning.harvard.edu/catalog/free"><button class="opt"><img src="h.svg"><h1>Harvard</h1>
+<h2>
+Browse the latest free online courses from Harvard University, including "CS50's Introduction to Game Development" and "CS50's Mobile App Development with React Native"
+</h2>
+</button></a><br><br>
+<a href="https://academicearth.org/universities/university-of-oxford/"><img id="img" src="ox.png">
+</a><br><br>
+</center>
+</div>
+</body>
+</html>

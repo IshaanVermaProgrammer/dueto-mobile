@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Goals</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function add(){
+const a=document.getElementById("tn").value;
+const b=document.createElement("li");
+b.innerHTML=`<textarea disabled>${a}</textarea><button id="d">Edit</button>`;
+document.getElementById("todo container").appendChild(b);
+}
+$(
+function(){
+$("#d").on('click', function(){
+alert(1);
+})
+}
+)
+</script>
+<script>
+</script>
+<style>
+</style>
+</head>
+<body>
+<center><input type="text" id="tn" placeholder="add a goal"> <button onclick="add()">add</button>
+<ul id="todo container"></ul>
+</center>
+</body>
+</html>
